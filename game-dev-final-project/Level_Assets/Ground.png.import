@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbv1twcgvshni"
-path="res://.godot/imported/Plant.png-cac34cdb12b12dbeca9623f49fb2917d.ctex"
+uid="uid://da7fq1qudls07"
+path="res://.godot/imported/Ground.png-da02538c41131652c12379a1c2dc0585.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/Plant.png"
-dest_files=["res://.godot/imported/Plant.png-cac34cdb12b12dbeca9623f49fb2917d.ctex"]
+source_file="res://Level_Assets/Ground.png"
+dest_files=["res://.godot/imported/Ground.png-da02538c41131652c12379a1c2dc0585.ctex"]
 
 [params]
 

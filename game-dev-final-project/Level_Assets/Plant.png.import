@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oxq3x2qu0sfl"
-path="res://.godot/imported/ZTX Props with Shadow.png-a13227af84543e336b00486731a2de13.ctex"
+uid="uid://cbv1twcgvshni"
+path="res://.godot/imported/Plant.png-79a47fb079216c0c9628cd4f768fc3a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/ZTX Props with Shadow.png"
-dest_files=["res://.godot/imported/ZTX Props with Shadow.png-a13227af84543e336b00486731a2de13.ctex"]
+source_file="res://Level_Assets/Plant.png"
+dest_files=["res://.godot/imported/Plant.png-79a47fb079216c0c9628cd4f768fc3a3.ctex"]
 
 [params]
 

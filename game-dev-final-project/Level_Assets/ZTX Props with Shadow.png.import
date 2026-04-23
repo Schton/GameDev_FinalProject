@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clm8syhbqn4dx"
-path="res://.godot/imported/Structures.png-31903142b6a42b223eae08c98a07587d.ctex"
+uid="uid://oxq3x2qu0sfl"
+path="res://.godot/imported/ZTX Props with Shadow.png-c2d6ff1dfa345442cd15f31a0de3ef61.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Levels/Structures.png"
-dest_files=["res://.godot/imported/Structures.png-31903142b6a42b223eae08c98a07587d.ctex"]
+source_file="res://Level_Assets/ZTX Props with Shadow.png"
+dest_files=["res://.godot/imported/ZTX Props with Shadow.png-c2d6ff1dfa345442cd15f31a0de3ef61.ctex"]
 
 [params]
 
