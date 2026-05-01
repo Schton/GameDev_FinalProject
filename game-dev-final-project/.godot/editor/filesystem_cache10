@@ -1,0 +1,17 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1777634198
+icon.svg::CompressedTexture2D::579822290075246961::1776863592::1776863636::1::::<><><>0<>0<>9d9a7caad5a8fcc3f585662954759a8b<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://Assets/::1776865676
+portals 2d.png::CompressedTexture2D::813223829251380079::1776865675::1776865676::1::::<><><>0<>0<>acd423b7f69d7019dbfb1db4d265f4b1<>res://.godot/imported/portals 2d.png-7d476ee8231628d21a404fcd25f412e1.ctex::
+::res://Level_Assets/::1776947653
+Ground.png::CompressedTexture2D::7225655688112672578::1776863592::1776947653::1::::<><><>0<>0<>c9cfc560f60b047f69208b3250a3d2ca<>res://.godot/imported/Ground.png-da02538c41131652c12379a1c2dc0585.ctex::
+Plant.png::CompressedTexture2D::4887995874660314494::1776863592::1776947653::1::::<><><>0<>0<>e565467888e00a604af3a96d045abfbe<>res://.godot/imported/Plant.png-79a47fb079216c0c9628cd4f768fc3a3.ctex::
+Props.png::CompressedTexture2D::3371525371968449319::1776863592::1776947653::1::::<><><>0<>0<>8b34ad6706b8c4c348a4e40bf2c6eace<>res://.godot/imported/Props.png-536b96807d89b891831b1be42d4e9249.ctex::
+Stone Ground.png::CompressedTexture2D::9168485714323157177::1776863592::1776947653::1::::<><><>0<>0<>135c53b432bd6854f161f9ee35ef9cfe<>res://.godot/imported/Stone Ground.png-162155bf0a7531b9ef8625211674113c.ctex::
+Structures.png::CompressedTexture2D::5571728256946252857::1776863592::1776947653::1::::<><><>0<>0<>b458b7584aef921d6af5468d965f6d57<>res://.godot/imported/Structures.png-c21357bb27e8d04b62dc19a80d25cce0.ctex::
+Walls.png::CompressedTexture2D::5887648396669661980::1776863592::1776947653::1::::<><><>0<>0<>6e7763fd63a446fe71c1921762ce9342<>res://.godot/imported/Walls.png-0cfe77087840af36b4e295b651d14fe2.ctex::
+ZTX Plant with Shadow.png::CompressedTexture2D::4741635203237167588::1776863592::1776947653::1::::<><><>0<>0<>2cf9a0c0dfc8da1869c246bcb5811539<>res://.godot/imported/ZTX Plant with Shadow.png-3704de975d80a2e2143da7704abc18f0.ctex::
+ZTX Props with Shadow.png::CompressedTexture2D::1031147223890898373::1776863592::1776947653::1::::<><><>0<>0<>e466dadc37b12bff8cc6de8ee23964ef<>res://.godot/imported/ZTX Props with Shadow.png-c2d6ff1dfa345442cd15f31a0de3ef61.ctex::
+::res://World Scene/::1776953057
+safe_zone.tres::TileSet::6784277385253027379::1776949579::0::1::::<><><>0<>0<><>::uid://da7fq1qudls07::::res://Level_Assets/Ground.png<>uid://clm8syhbqn4dx::::res://Level_Assets/Structures.png<>uid://bobgsbasatl2n::::res://Level_Assets/Props.png<>uid://lt6xbmr2vc4v::::res://Assets/portals 2d.png<>uid://cp5aydqqrv28w::::res://Level_Assets/Walls.png
+safe_zone.tscn::PackedScene::8725303337562729832::1776953057::0::1::::<><><>0<>0<><>::uid://c3wmb7jxhrq0j::::res://World Scene/safe_zone.tres
