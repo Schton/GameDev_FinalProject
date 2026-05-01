@@ -1,5 +1,8 @@
 extends CharacterBody2D
 
+enum Faction { PLAYER, ENEMY }
+@export var faction = Faction.PLAYER
+
 @export var projectile_scene: PackedScene
 @export var projectile_distance := 600.0
 
@@ -29,6 +32,7 @@ var is_dashing := false
 func _ready():
 	hp = max_hp
 	$SwordHitbox.monitoring = false
+	add_to_group("units")
 
 func _process(delta):
 	if Input.is_action_just_pressed("mouse_left") and not is_attacking:
@@ -157,7 +161,7 @@ func start_sword_hit():
 	print("Checking for bodies... found: ", bodies.size()) # Debug this!
 
 	for body in bodies:
-		if body.has_method("take_damage"):
+		if body.has_method("take_damage") and body.faction != faction:
 			var knock = global_position.direction_to(body.global_position)
 			body.take_damage(sword_damage, knock)
 			
@@ -259,7 +263,7 @@ func die():
 	queue_free()
 
 func _on_sword_hitbox_body_entered(body: Node2D) -> void:
-	if body.has_method("take_damage"):
+	if body.has_method("take_damage") and body.faction != faction:
 		var knock = global_position.direction_to(body.global_position)
 		body.take_damage(sword_damage, knock)
 	print("Sword touched:", body.name)

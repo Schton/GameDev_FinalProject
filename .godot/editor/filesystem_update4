@@ -1,1 +1,9 @@
+res://scenes/enemy/basic_enemy.tscn
+res://scenes/enemy/basic_enemy.gd
+res://scenes/player/player.gd
+res://scenes/ally/basic_enemy.tscn
+res://scenes/ally/basic_enemy.gd
+res://scenes/ally/basic_ally.tscn
+res://scenes/ally/basic_ally.gd
+res://scenes/player/player.tscn
 res://scenes/world/test_map.tscn

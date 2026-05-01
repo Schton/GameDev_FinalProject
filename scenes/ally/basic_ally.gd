@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 enum Faction { PLAYER, ENEMY }
-@export var faction = Faction.ENEMY  # enemy default
+@export var faction = Faction.PLAYER  # ally default
 
 # =====================================================
 # ADVANCED SOULSLIKE ENEMY AI (Godot 4)
@@ -19,6 +19,8 @@ enum Faction { PLAYER, ENEMY }
 # =====================================================
 
 enum State {
+	FOLLOW,
+	ENGAGE,
 	IDLE,
 	PATROL,
 	CHASE,
@@ -29,11 +31,14 @@ enum State {
 	RETURN_HOME
 }
 
-var state = State.IDLE
+var player
+var state = State.FOLLOW
+var offset = Vector2.ZERO
 
 # ==========================
 # SETTINGS
 # ==========================
+
 @export var move_speed := 130.0
 @export var detect_range := 420.0
 @export var lose_range := 700.0
@@ -77,6 +82,11 @@ func _ready():
 	target = get_tree().get_first_node_in_group("player")
 	add_to_group("units")
 
+	player = get_tree().get_first_node_in_group("player")
+
+	# Assign random formation offset
+	offset = Vector2(randf_range(-60, 60), randf_range(-60, 60))
+
 	randomize()
 
 # =====================================================
@@ -89,7 +99,17 @@ func _physics_process(delta):
 		if target == null:
 			return
 
+		if player == null:
+			return
+
 	match state:
+
+		State.FOLLOW:
+			state_follow()
+
+		State.ENGAGE:
+			state_engage()
+
 		State.IDLE:
 			state_idle()
 
@@ -123,6 +143,43 @@ func _physics_process(delta):
 # =====================================================
 # STATES
 # =====================================================
+
+func state_follow():
+
+	var desired_pos = player.global_position + offset
+	var dist = global_position.distance_to(desired_pos)
+
+	if dist > 10:
+		var dir = global_position.direction_to(desired_pos)
+		velocity = (dir * move_speed) + separation_force()
+	else:
+		velocity = Vector2.ZERO
+
+	find_target()
+
+	if target != null and distance_to_target() < detect_range:
+		state = State.ENGAGE
+
+func state_engage():
+
+	if not is_instance_valid(target):
+		state = State.FOLLOW
+		return
+
+	var dist = distance_to_target()
+	var dir = direction_to_target()
+
+	if dist > detect_range:
+		target = null
+		state = State.FOLLOW
+		return
+
+	if dist <= attack_range:
+		try_attack()
+		return
+
+	velocity = dir * move_speed + separation_force()
+
 
 func state_idle():
 	velocity = Vector2.ZERO
@@ -361,3 +418,23 @@ func apply_separation():
 			push += (global_position - u.global_position).normalized()
 
 	return push * 25
+
+# =========================
+# SEPARATION (ANTI-CLUMP)
+# =========================
+
+func separation_force():
+
+	var units = get_tree().get_nodes_in_group("units")
+	var push = Vector2.ZERO
+
+	for u in units:
+		if u == self:
+			continue
+
+		var dist = global_position.distance_to(u.global_position)
+
+		if dist < 32:
+			push += (global_position - u.global_position).normalized()
+
+	return push * 60

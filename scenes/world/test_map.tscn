@@ -2150,31 +2150,31 @@ tile_map_data = PackedByteArray("AAAMAAAAAAAIAAkAAAANAAAAAAAJAAkAAAARAP//AAAIAAk
 tile_set = SubResource("TileSet_x4yjv")
 
 [node name="BasicEnemy2" parent="TileMap" unique_id=1367043656 instance=ExtResource("4_010cr")]
-position = Vector2(-370, 653)
+position = Vector2(-321, 244)
 
 [node name="BasicEnemy3" parent="TileMap" unique_id=182063471 instance=ExtResource("4_010cr")]
-position = Vector2(-247, 728)
+position = Vector2(-198, 319)
 
 [node name="BasicEnemy" parent="TileMap" unique_id=633598066 instance=ExtResource("4_010cr")]
-position = Vector2(-321, 500)
+position = Vector2(-272, 91)
 
 [node name="BasicEnemy4" parent="TileMap" unique_id=2129853157 instance=ExtResource("4_010cr")]
-position = Vector2(-431, 799)
+position = Vector2(-382, 390)
 
 [node name="BasicEnemy5" parent="TileMap" unique_id=544175471 instance=ExtResource("4_010cr")]
-position = Vector2(-551, 692)
+position = Vector2(-502, 283)
 
 [node name="BasicEnemy6" parent="TileMap" unique_id=781606329 instance=ExtResource("4_010cr")]
-position = Vector2(-332, 979)
+position = Vector2(-283, 570)
 
 [node name="BasicEnemy7" parent="TileMap" unique_id=1342613450 instance=ExtResource("4_010cr")]
-position = Vector2(-209, 1054)
+position = Vector2(-160, 645)
 
 [node name="BasicEnemy8" parent="TileMap" unique_id=155159609 instance=ExtResource("4_010cr")]
-position = Vector2(-283, 826)
+position = Vector2(-234, 417)
 
 [node name="BasicEnemy9" parent="TileMap" unique_id=304233252 instance=ExtResource("4_010cr")]
-position = Vector2(-393, 1125)
+position = Vector2(-344, 716)
 
 [node name="BasicEnemy10" parent="TileMap" unique_id=450577714 instance=ExtResource("4_010cr")]
-position = Vector2(-513, 1018)
+position = Vector2(-464, 609)
