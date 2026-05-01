@@ -1,0 +1,759 @@
+{
+  "version": 2,
+  "bodyType": "male",
+  "selections": {
+    "body": {
+      "itemId": "body",
+      "subId": null,
+      "variant": "",
+      "recolor": "fur_black",
+      "name": "Body Color (fur_black)"
+    },
+    "head": {
+      "itemId": "heads_human_male",
+      "subId": null,
+      "variant": "",
+      "recolor": "fur_black",
+      "name": "Human Male (fur_black)"
+    },
+    "expression": {
+      "itemId": "face_neutral",
+      "subId": null,
+      "variant": "",
+      "recolor": "fur_black",
+      "name": "Neutral (fur_black)"
+    },
+    "hat": {
+      "itemId": "hat_helmet_close",
+      "subId": null,
+      "variant": "",
+      "recolor": "silver",
+      "name": "Close helm (silver)"
+    },
+    "arms": {
+      "itemId": "arms_armour",
+      "subId": null,
+      "variant": "silver",
+      "recolor": "",
+      "name": "Armour (silver)"
+    },
+    "armour": {
+      "itemId": "torso_armour_plate",
+      "subId": null,
+      "variant": "",
+      "recolor": "silver",
+      "name": "Plate (silver)"
+    },
+    "legs": {
+      "itemId": "legs_armour",
+      "subId": null,
+      "variant": "",
+      "recolor": "silver",
+      "name": "Armour (silver)"
+    },
+    "shoes": {
+      "itemId": "feet_armour",
+      "subId": null,
+      "variant": "silver",
+      "recolor": "",
+      "name": "Armour (silver)"
+    },
+    "gloves": {
+      "itemId": "arms_gloves",
+      "subId": null,
+      "variant": "silver",
+      "recolor": "",
+      "name": "Gloves (silver)"
+    },
+    "apron": {
+      "itemId": "torso_aprons_apron",
+      "subId": null,
+      "variant": "yellow",
+      "recolor": "",
+      "name": "Apron (yellow)"
+    },
+    "accessory": {
+      "itemId": "hat_accessory_plumage",
+      "subId": null,
+      "variant": "",
+      "recolor": "yellow",
+      "name": "Plumage (yellow)"
+    },
+    "visor": {
+      "itemId": "hat_visor_horned",
+      "subId": null,
+      "variant": "",
+      "recolor": "silver",
+      "name": "Horned visor (silver)"
+    },
+    "weapon": {
+      "itemId": "weapon_sword_longsword",
+      "subId": null,
+      "variant": "longsword",
+      "recolor": "",
+      "name": "Longsword (longsword)"
+    }
+  },
+  "selectedAnimation": "walk",
+  "showTransparencyGrid": true,
+  "applyTransparencyMask": false,
+  "matchBodyColorEnabled": true,
+  "compactDisplay": false,
+  "enabledLicenses": {
+    "CC0": true,
+    "CC-BY-SA": true,
+    "CC-BY": true,
+    "OGA-BY": true,
+    "GPL": true
+  },
+  "enabledAnimations": {
+    "spellcast": false,
+    "thrust": false,
+    "walk": false,
+    "slash": false,
+    "shoot": false,
+    "hurt": false,
+    "climb": false,
+    "idle": false,
+    "jump": false,
+    "sit": false,
+    "emote": false,
+    "run": false,
+    "watering": false,
+    "combat": false,
+    "1h_slash": false,
+    "1h_backslash": false,
+    "1h_halfslash": false
+  },
+  "url": "https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#sex=male&body=Body_Color_fur_black&head=Human_Male_fur_black&expression=Neutral_fur_black&hat=Close_helm_silver&arms=Armour_silver&armour=Plate_silver&legs=Armour_silver&shoes=Armour_silver&gloves=Gloves_silver&apron=Apron_yellow&accessory=Plumage_yellow&visor=Horned_visor_silver&weapon=Longsword_longsword",
+  "layers": [
+    {
+      "itemId": "weapon_sword_longsword",
+      "name": "Longsword (longsword)",
+      "variant": "longsword",
+      "recolors": null,
+      "zPos": 9,
+      "layerNum": 2,
+      "yPos": 512,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "weapon/sword/longsword/universal_behind/walk/longsword.png",
+      "supportedAnimations": [
+        "walk",
+        "hurt"
+      ]
+    },
+    {
+      "itemId": "body",
+      "name": "Body Color (fur_black)",
+      "variant": "",
+      "recolors": {
+        "body": "fur_black"
+      },
+      "zPos": 10,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "body/bodies/male/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "feet_armour",
+      "name": "Armour (silver)",
+      "variant": "silver",
+      "recolors": null,
+      "zPos": 15,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "feet/armour/plate/male/spellcast/silver.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "idle"
+      ]
+    },
+    {
+      "itemId": "legs_armour",
+      "name": "Armour (silver)",
+      "variant": "",
+      "recolors": {
+        "legs": "silver"
+      },
+      "zPos": 20,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "legs/armour/plate/male/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote"
+      ]
+    },
+    {
+      "itemId": "torso_aprons_apron",
+      "name": "Apron (yellow)",
+      "variant": "yellow",
+      "recolors": null,
+      "zPos": 40,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "torso/aprons/apron/male/spellcast/yellow.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt"
+      ]
+    },
+    {
+      "itemId": "arms_armour",
+      "name": "Armour (silver)",
+      "variant": "silver",
+      "recolors": null,
+      "zPos": 60,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "arms/armour/plate/male/spellcast/silver.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "idle"
+      ]
+    },
+    {
+      "itemId": "torso_armour_plate",
+      "name": "Plate (silver)",
+      "variant": "",
+      "recolors": {
+        "armour": "silver"
+      },
+      "zPos": 60,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "torso/armour/plate/male/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "arms_gloves",
+      "name": "Gloves (silver)",
+      "variant": "silver",
+      "recolors": null,
+      "zPos": 70,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "arms/gloves/male/spellcast/silver.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "heads_human_male",
+      "name": "Human Male (fur_black)",
+      "variant": "",
+      "recolors": {
+        "head": "fur_black"
+      },
+      "zPos": 100,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "head/heads/human/male/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "face_neutral",
+      "name": "Neutral (fur_black)",
+      "variant": "",
+      "recolors": {
+        "expression": "fur_black"
+      },
+      "zPos": 101,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "head/faces/male/neutral/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "hat_helmet_close",
+      "name": "Close helm (silver)",
+      "variant": "",
+      "recolors": {
+        "hat": "silver"
+      },
+      "zPos": 130,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "hat/helmet/close/male/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "hat_visor_horned",
+      "name": "Horned visor (silver)",
+      "variant": "",
+      "recolors": {
+        "visor": "silver"
+      },
+      "zPos": 132,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "hat/visor/horned/adult/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "hat_accessory_plumage",
+      "name": "Plumage (yellow)",
+      "variant": "",
+      "recolors": {
+        "accessory": "yellow"
+      },
+      "zPos": 139,
+      "layerNum": 1,
+      "yPos": 0,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "hat/accessory/plumage/adult/spellcast.png",
+      "supportedAnimations": [
+        "spellcast",
+        "thrust",
+        "walk",
+        "slash",
+        "shoot",
+        "hurt",
+        "climb",
+        "idle",
+        "jump",
+        "sit",
+        "emote",
+        "run",
+        "combat_idle",
+        "backslash",
+        "halfslash"
+      ]
+    },
+    {
+      "itemId": "weapon_sword_longsword",
+      "name": "Longsword (longsword)",
+      "variant": "longsword",
+      "recolors": null,
+      "zPos": 140,
+      "layerNum": 1,
+      "yPos": 512,
+      "isCustom": false,
+      "needsRecolor": false,
+      "fileName": "weapon/sword/longsword/walk/longsword.png",
+      "supportedAnimations": [
+        "walk",
+        "hurt"
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "fileName": "body/bodies/male/walk.png",
+      "file": "body/bodies/male",
+      "notes": "see details at https://opengameart.org/content/lpc-character-bases; 'Thick' Male Revised Run/Climb by JaidynReiman (based on ElizaWy's LPC Revised)",
+      "authors": [
+        "bluecarrot16",
+        "JaidynReiman",
+        "Benjamin K. Smith (BenCreating)",
+        "Evert",
+        "Eliza Wyatt (ElizaWy)",
+        "TheraHedwig",
+        "MuffinElZangano",
+        "Durrani",
+        "Johannes Sjölund (wulax)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-male-jumping-animation-by-durrani",
+        "https://opengameart.org/content/lpc-runcycle-and-diagonal-walkcycle",
+        "https://opengameart.org/content/lpc-revised-character-basics",
+        "https://opengameart.org/content/lpc-be-seated",
+        "https://opengameart.org/content/lpc-runcycle-for-male-muscular-and-pregnant-character-bases-with-modular-heads",
+        "https://opengameart.org/content/lpc-jump-expanded",
+        "https://opengameart.org/content/lpc-character-bases"
+      ]
+    },
+    {
+      "fileName": "head/heads/human/male/walk.png",
+      "file": "head/heads/human/male",
+      "notes": "original head by Redshrike, tweaks by BenCreating, modular version by bluecarrot16",
+      "authors": [
+        "bluecarrot16",
+        "Benjamin K. Smith (BenCreating)",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/liberated-pixel-cup-lpc-base-assets-sprites-map-tiles",
+        "https://opengameart.org/content/lpc-character-bases"
+      ]
+    },
+    {
+      "fileName": "head/faces/male/neutral/walk.png",
+      "file": "head/faces",
+      "notes": "Original by Redshrike, Expressions by ElizaWy, mapped to all frames by JaidynReiman",
+      "authors": [
+        "JaidynReiman",
+        "ElizaWy",
+        "Stephen Challener (Redshrike)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0"
+      ],
+      "urls": [
+        "https://github.com/ElizaWy/LPC/tree/main/Characters/Head",
+        "https://opengameart.org/content/ulpc-expanded-expressions"
+      ]
+    },
+    {
+      "fileName": "hat/helmet/close/male/walk.png",
+      "file": "hat/helmet/close",
+      "notes": "",
+      "authors": [
+        "bluecarrot16"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY 3.0",
+        "CC-BY 4.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-helmets",
+        "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+      ]
+    },
+    {
+      "fileName": "arms/armour/plate/male/walk/silver.png",
+      "file": "arms/armour/plate/male",
+      "notes": "original by wulax, recolors by bigbeargames; adapted to v3 bases and further recolors by bluecarrot16",
+      "authors": [
+        "Michael Whitlock (bigbeargames)",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "http://opengameart.org/content/lpc-clothing-updates"
+      ]
+    },
+    {
+      "fileName": "torso/armour/plate/male/walk.png",
+      "file": "torso/armour/plate/male",
+      "notes": "original by wulax, recolor by bigbeargames, color reduced to 7 colors and adapted to v3 bases by bluecarrot16, run/jump/sit/climb/revised combat by JaidynReiman, reduced colors to 6 (based on Napsio's Vitruvian)",
+      "authors": [
+        "Napsio (Vitruvian Studio)",
+        "JaidynReiman",
+        "bluecarrot16",
+        "Michael Whitlock (bigbeargames)",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-combat-armor-for-women"
+      ]
+    },
+    {
+      "fileName": "legs/armour/plate/male/walk.png",
+      "file": "legs/armour/plate",
+      "notes": "reduced to 7 colors an adapted to v3 bases by bluecarrot16, climb/jump/sit/emotes by JaidynReiman",
+      "authors": [
+        "bluecarrot16",
+        "JaidynReiman",
+        "Michael Whitlock (bigbeargames)",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+      ]
+    },
+    {
+      "fileName": "feet/armour/plate/male/walk/silver.png",
+      "file": "feet/armour/plate",
+      "notes": "original by wulax, recolors by bigbeargames, edits for v3 base and recolors by bluecarrot16",
+      "authors": [
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites"
+      ]
+    },
+    {
+      "fileName": "arms/gloves/male/walk/silver.png",
+      "file": "arms/gloves/male",
+      "notes": "metal gloves by wulax, recolors by bigbeargames, adapted to v3 bases by bluecarrot16, added to expanded animations by JaidynReiman",
+      "authors": [
+        "Michael Whitlock (bigbeargames)",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)",
+        "bluecarrot16",
+        "JaidynReiman"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "http://opengameart.org/content/lpc-clothing-updates"
+      ]
+    },
+    {
+      "fileName": "torso/aprons/apron/male/walk/yellow.png",
+      "file": "torso/aprons/apron",
+      "notes": "",
+      "authors": [
+        "Nila122"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "GPL 2.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-aprons"
+      ]
+    },
+    {
+      "fileName": "hat/accessory/plumage/adult/walk.png",
+      "file": "hat/accessory/plumage",
+      "notes": "",
+      "authors": [
+        "ElizaWy"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0",
+        "CC-BY-SA 4.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-realistic-helmet-pack",
+        "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+      ]
+    },
+    {
+      "fileName": "hat/visor/horned/adult/walk.png",
+      "file": "hat/visor/horned",
+      "notes": "",
+      "authors": [
+        "bluecarrot16",
+        "Shaun Williams",
+        "Matthew Krohn (makrohn)",
+        "Johannes Sjölund (wulax)",
+        "Sander Frenken (castelonia)"
+      ],
+      "licenses": [
+        "CC-BY-SA 3.0",
+        "GPL 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-full-plate-golden-armor",
+        "https://opengameart.org/content/lpc-full-plate-golden-armor-0",
+        "https://opengameart.org/content/lpc-helmets-mega-pack",
+        "https://opengameart.org/content/lpc-expanded-hats-facial-helmets"
+      ]
+    },
+    {
+      "fileName": "weapon/sword/longsword/walk/longsword.png",
+      "file": "weapon/sword/longsword",
+      "notes": "",
+      "authors": [
+        "Johannes Sjölund (wulax)",
+        "bluecarrot16"
+      ],
+      "licenses": [
+        "OGA-BY 3.0",
+        "CC-BY-SA 3.0"
+      ],
+      "urls": [
+        "https://opengameart.org/content/lpc-medieval-fantasy-character-sprites",
+        "https://opengameart.org/content/lpc-extended-weapon-animations"
+      ]
+    }
+  ]
+}
