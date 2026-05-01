@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
 enum Faction { PLAYER, ENEMY }
+enum State { ALIVE, DEAD } # Use the same names as the enemy script
+var state = State.ALIVE
+
 @export var faction = Faction.PLAYER
 
 @export var projectile_scene: PackedScene

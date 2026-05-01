@@ -3,6 +3,9 @@ extends CharacterBody2D
 enum Faction { PLAYER, ENEMY }
 @export var faction = Faction.PLAYER  # ally default
 
+var current_duelist: CharacterBody2D = null # The person currently fighting me
+@export var is_ally := false # Set true for followers, false for enemies
+
 # =====================================================
 # ADVANCED SOULSLIKE ENEMY AI (Godot 4)
 # Features:
@@ -149,16 +152,15 @@ func state_follow():
 	var desired_pos = player.global_position + offset
 	var dist = global_position.distance_to(desired_pos)
 
-	if dist > 10:
+	if dist > 15:
 		var dir = global_position.direction_to(desired_pos)
-		velocity = (dir * move_speed) + separation_force()
+		velocity = (dir * move_speed) + apply_separation()
 	else:
 		velocity = Vector2.ZERO
 
 	find_target()
-
 	if target != null and distance_to_target() < detect_range:
-		state = State.ENGAGE
+		state = State.CHASE # Switch to combat logic
 
 func state_engage():
 
@@ -178,7 +180,7 @@ func state_engage():
 		try_attack()
 		return
 
-	velocity = dir * move_speed + separation_force()
+	velocity = dir * move_speed + apply_separation()
 
 
 func state_idle():
@@ -212,7 +214,6 @@ func state_chase():
 	last_move_dir = dir
 
 func state_strafe():
-
 	if not is_instance_valid(target):
 		state = State.CHASE
 		return
@@ -221,36 +222,43 @@ func state_strafe():
 	var dist = distance_to_target()
 
 	# --- ORBIT SETTINGS ---
-	var desired_radius = strafe_range
-	var orbit_speed = move_speed * 0.9
-	var radius_tolerance = 8.0
-
-	# --- 1. TANGENTIAL (circle movement) ---
+	var desired_radius = 65.0 # Tighter circle
+	var orbit_speed = move_speed * 0.8
+	
+	# 1. Calculate the raw sideways vector
 	var tangent = to_target.rotated(deg_to_rad(90 * strafe_dir))
+	
+	# 2. BLEND: Instead of just going sideways, we mix in a "Seek" vector
+	# If they are too far, they steer significantly toward the player while orbiting
+	var spiral_dir = tangent # Default to pure sideways
+	
+	if dist > desired_radius:
+		# PULL IN: Same as your current logic
+		var weight = clamp((dist - desired_radius) / 20.0, 0.0, 1.0)
+		spiral_dir = tangent.lerp(-to_target, weight).normalized()
+	elif dist < desired_radius - 10.0:
+		# PUSH BACK: This is where you control the "Back Off"
+		# Increase the 0.5 to push back harder, or decrease it to drift back slowly
+		var push_weight = 0.2
+		spiral_dir = tangent.lerp(to_target, push_weight).normalized()
 
-	# --- 2. RADIAL CORRECTION (stay in ring) ---
-	var radial_force = Vector2.ZERO
+	# 3. SEPARATION: Keep this very low during strafe so it doesn't push them out
+	var sep = apply_separation() * 0.2 
 
-	if dist > desired_radius + radius_tolerance:
-		radial_force = -to_target * move_speed * 0.6
-	elif dist < desired_radius - radius_tolerance:
-		radial_force = to_target * move_speed * 0.6
+	velocity = (spiral_dir * orbit_speed) + sep
 
-	# --- COMBINE ---
-	var sep = apply_separation() * 0.6
-	velocity = (tangent * orbit_speed) + radial_force + sep
-	velocity = velocity.limit_length(move_speed)
-
-	# --- FACE TARGET (VERY IMPORTANT) ---
+	# Face target
 	last_move_dir = to_target
 
-	# --- RANDOM ORBIT DIRECTION CHANGE (RARE) ---
+	# Randomly change direction
 	if randf() < 0.005:
 		strafe_dir *= -1
 
-	# --- ATTACK CHECK ---
-	if dist <= attack_range:
+	# ATTACK CHECK (Close the gap if they are in range)
+	if dist <= attack_range + 5:
 		try_attack()
+	elif dist > detect_range: # If they somehow drift too far, go back to chase
+		state = State.CHASE
 
 func state_attack():
 	velocity = Vector2.ZERO
@@ -322,24 +330,33 @@ func start_attack():
 
 func find_target():
 	var units = get_tree().get_nodes_in_group("units")
-
-	var closest = null
+	var closest_enemy = null
 	var closest_dist = INF
 
 	for u in units:
-		if u == self:
-			continue
-		if not u.has_method("take_damage"):
-			continue
-		if u.faction == faction:
+		if u == self or u.state == State.DEAD: continue
+		if u.faction == faction: continue # Don't target friends
+
+		# DUEL LOGIC: If the enemy is already in a duel with someone else,
+		# ignore them UNLESS they are the player (player always has priority).
+		if u.current_duelist != null and u.current_duelist != self and u.faction != Faction.PLAYER:
 			continue
 
 		var d = global_position.distance_to(u.global_position)
 		if d < closest_dist:
-			closest = u
+			closest_enemy = u
 			closest_dist = d
 
-	target = closest
+	if closest_enemy != target:
+		# If we found someone new, clear our old duel status
+		if target and "current_duelist" in target:
+			target.current_duelist = null  
+
+		target = closest_enemy
+		
+		# Lock into a duel
+		if target: 
+			target.current_duelist = self
 
 # =====================================================
 # DAMAGE / HITSTUN
@@ -366,6 +383,10 @@ func take_damage(amount, knock_dir := Vector2.ZERO):
 func die():
 
 	state = State.DEAD
+
+	if target and "current_duelist" in target:
+		target.current_duelist = null
+
 	velocity = Vector2.ZERO
 	anim.play("death")
 
@@ -414,27 +435,9 @@ func apply_separation():
 			continue
 
 		var dist = global_position.distance_to(u.global_position)
-		if dist < 32:
-			push += (global_position - u.global_position).normalized()
+		if dist < 25: # Smaller radius
+		# The further away they are, the less they push
+			var strength = 1.0 - (dist / 25.0)
+			push += (global_position - u.global_position).normalized() * strength
 
-	return push * 25
-
-# =========================
-# SEPARATION (ANTI-CLUMP)
-# =========================
-
-func separation_force():
-
-	var units = get_tree().get_nodes_in_group("units")
-	var push = Vector2.ZERO
-
-	for u in units:
-		if u == self:
-			continue
-
-		var dist = global_position.distance_to(u.global_position)
-
-		if dist < 32:
-			push += (global_position - u.global_position).normalized()
-
-	return push * 60
+	return push * 15.0 # Lowered multiplier

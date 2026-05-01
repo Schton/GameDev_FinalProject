@@ -3,6 +3,9 @@ extends CharacterBody2D
 enum Faction { PLAYER, ENEMY }
 @export var faction = Faction.ENEMY  # enemy default
 
+var current_duelist: CharacterBody2D = null # The person currently fighting me
+@export var is_ally := true # Set true for followers, false for enemies
+
 # =====================================================
 # ADVANCED SOULSLIKE ENEMY AI (Godot 4)
 # Features:
@@ -271,34 +274,51 @@ func start_attack():
 
 func find_target():
 	var units = get_tree().get_nodes_in_group("units")
-
-	var closest = null
+	var closest_enemy = null
 	var closest_dist = INF
 
 	for u in units:
-		if u == self:
-			continue
-		if not u.has_method("take_damage"):
-			continue
-		if u.faction == faction:
+		if u == self or u.state == State.DEAD: continue
+		if u.faction == faction: continue # Don't target friends
+
+		# DUEL LOGIC: If the enemy is already in a duel with someone else,
+		# ignore them UNLESS they are the player (player always has priority).
+		if u.current_duelist != null and u.current_duelist != self and u.faction != Faction.PLAYER:
 			continue
 
 		var d = global_position.distance_to(u.global_position)
 		if d < closest_dist:
-			closest = u
+			closest_enemy = u
 			closest_dist = d
 
-	target = closest
+	if closest_enemy != target:
+		# If we found someone new, clear our old duel status
+		if target and "current_duelist" in target:
+			target.current_duelist = null  
+
+		target = closest_enemy
+		
+		# Lock into a duel
+		if target: 
+			target.current_duelist = self
 
 # =====================================================
 # DAMAGE / HITSTUN
 # =====================================================
 
-func take_damage(amount, knock_dir := Vector2.ZERO):
+func take_damage(amount, knock_dir := Vector2.ZERO, attacker = null):
 	if state == State.DEAD:
 		return
 
 	health -= amount
+
+# INTERVENTION LOGIC:
+	# If the player hits us, drop the current duel and target the player
+	if attacker and "faction" in attacker and attacker.faction == Faction.PLAYER:
+		if target and "current_duelist" in target:
+			target.current_duelist = null
+		target = attacker
+		state = State.CHASE # Force switch to player pursuit
 
 	if health <= 0:
 		die()
@@ -315,6 +335,10 @@ func take_damage(amount, knock_dir := Vector2.ZERO):
 func die():
 
 	state = State.DEAD
+
+	if target and "current_duelist" in target:
+		target.current_duelist = null
+
 	velocity = Vector2.ZERO
 	anim.play("death")
 

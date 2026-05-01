@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://l56xrwlcsdwb" path="res://art/maps/Tilesets/Floors_Tiles.png" id="2_x4yjv"]
 [ext_resource type="Texture2D" uid="uid://geyg8p3mcuen" path="res://art/maps/Tilesets/Wall_Tiles.png" id="3_vlyuc"]
 [ext_resource type="PackedScene" uid="uid://cuyfg5fwi5il8" path="res://scenes/enemy/basic_enemy.tscn" id="4_010cr"]
+[ext_resource type="PackedScene" uid="uid://cp5i15jweg7fc" path="res://scenes/ally/basic_ally.tscn" id="5_jjb5g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vlyuc"]
 texture = ExtResource("2_x4yjv")
@@ -2178,3 +2179,12 @@ position = Vector2(-344, 716)
 
 [node name="BasicEnemy10" parent="TileMap" unique_id=450577714 instance=ExtResource("4_010cr")]
 position = Vector2(-464, 609)
+
+[node name="BasicAlly" parent="TileMap" unique_id=1569257186 instance=ExtResource("5_jjb5g")]
+position = Vector2(507, 262)
+
+[node name="BasicAlly2" parent="TileMap" unique_id=65826382 instance=ExtResource("5_jjb5g")]
+position = Vector2(421, 390)
+
+[node name="BasicAlly3" parent="TileMap" unique_id=1157276507 instance=ExtResource("5_jjb5g")]
+position = Vector2(513, 368)
