@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clm8syhbqn4dx"
-path="res://.godot/imported/Structures.png-c21357bb27e8d04b62dc19a80d25cce0.ctex"
+uid="uid://da7fq1qudls07"
+path="res://.godot/imported/Ground.png-fdb3e3a4251a25671f6baff79463090c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Level_Assets/Structures.png"
-dest_files=["res://.godot/imported/Structures.png-c21357bb27e8d04b62dc19a80d25cce0.ctex"]
+source_file="res://Safe_Zone_Assets/Ground.png"
+dest_files=["res://.godot/imported/Ground.png-fdb3e3a4251a25671f6baff79463090c.ctex"]
 
 [params]
 

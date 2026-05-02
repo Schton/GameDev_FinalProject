@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbv1twcgvshni"
-path="res://.godot/imported/Plant.png-79a47fb079216c0c9628cd4f768fc3a3.ctex"
+uid="uid://d3vjvc6wbgb8t"
+path="res://.godot/imported/Stone Ground.png-7f6363919d2738bf8e3904779f0b888a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Level_Assets/Plant.png"
-dest_files=["res://.godot/imported/Plant.png-79a47fb079216c0c9628cd4f768fc3a3.ctex"]
+source_file="res://Safe_Zone_Assets/Stone Ground.png"
+dest_files=["res://.godot/imported/Stone Ground.png-7f6363919d2738bf8e3904779f0b888a.ctex"]
 
 [params]
 

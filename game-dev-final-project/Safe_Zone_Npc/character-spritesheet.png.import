@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bobgsbasatl2n"
-path="res://.godot/imported/Props.png-536b96807d89b891831b1be42d4e9249.ctex"
+uid="uid://ci25jrpsc58ow"
+path="res://.godot/imported/character-spritesheet.png-8f1c6f7085a855c2a4aae90dfdad63f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Level_Assets/Props.png"
-dest_files=["res://.godot/imported/Props.png-536b96807d89b891831b1be42d4e9249.ctex"]
+source_file="res://Safe_Zone_Npc/character-spritesheet.png"
+dest_files=["res://.godot/imported/character-spritesheet.png-8f1c6f7085a855c2a4aae90dfdad63f4.ctex"]
 
 [params]
 
