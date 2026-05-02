@@ -27,7 +27,8 @@ animations = [{
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1058837898]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=799667189]
+z_index = 1
 sprite_frames = SubResource("SpriteFrames_5elk0")
 animation = &"Idle_animation"
 autoplay = "Idle_animation"
-frame_progress = 0.13392845
+frame_progress = 0.5575817
