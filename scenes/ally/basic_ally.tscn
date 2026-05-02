@@ -403,7 +403,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_hks4s")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack_front",
 "speed": 15.0
 }, {
@@ -704,7 +704,7 @@ script = ExtResource("1_5j57s")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=42447682]
 sprite_frames = SubResource("SpriteFrames_74jpl")
-animation = &"idle_front"
+animation = &"attack_back"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=871503105]
 position = Vector2(0, 8)

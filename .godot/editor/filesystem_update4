@@ -1,13 +1,1 @@
-res://sprites/Player01/credits/credits.notes.translation
-res://sprites/Basic_Enemy01/credits/credits.notes.translation
-res://sprites/Player01/credits/credits.authors.translation
-res://sprites/Basic_Enemy01/credits/credits.authors.translation
-res://sprites/Player01/credits/credits.licenses.translation
-res://sprites/Basic_Enemy01/credits/credits.licenses.translation
-res://sprites/Player01/credits/credits.urls.translation
-res://sprites/Basic_Enemy01/credits/credits.urls.translation
 res://scenes/ally/basic_ally.tscn
-res://scenes/ally/basic_ally.gd
-res://scenes/enemy/basic_enemy.gd
-res://scenes/world/test_map.tscn
-res://scenes/player/player.gd
