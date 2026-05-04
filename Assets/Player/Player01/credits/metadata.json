@@ -1,0 +1,59 @@
+{
+  "exportTimestamp": "2026-04-19T16-25-03",
+  "bodyType": "male",
+  "standardAnimations": {
+    "exported": [
+      "spellcast",
+      "thrust",
+      "walk",
+      "slash",
+      "shoot",
+      "hurt",
+      "climb",
+      "idle",
+      "jump",
+      "sit",
+      "emote",
+      "run",
+      "watering",
+      "combat",
+      "1h_slash",
+      "1h_backslash",
+      "1h_halfslash"
+    ],
+    "failed": []
+  },
+  "customAnimations": {
+    "exported": [
+      "slash_oversize",
+      "slash_reverse_oversize",
+      "thrust_oversize"
+    ],
+    "failed": []
+  },
+  "frameSize": 64,
+  "frameCounts": {},
+  "performance": {
+    "exportKind": "splitAnimations",
+    "totalMs": 404,
+    "phasesMs": {
+      "render_composite_extractAnimationFromCanvas": 0,
+      "drawAndSlice": 351,
+      "pngEncode": 51,
+      "zipFile": 0,
+      "staticFiles": 1
+    },
+    "counters": {
+      "pngEncodeCount": 20,
+      "totalPngBytes": 461593,
+      "drawAndSliceCount": 20,
+      "zipFileEntryCount": 20,
+      "renderExtractAnimationFromCanvasCalls": 17,
+      "renderSingleItemCalls": 0,
+      "renderSingleItemAnimationCalls": 0,
+      "extractFramesFromAnimationBatchCount": 0,
+      "renderSliceCanvasForCustomAnimCalls": 0
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0"
+  }
+}
