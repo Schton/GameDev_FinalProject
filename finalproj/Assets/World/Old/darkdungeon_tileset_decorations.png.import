@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmbh8qqx76e6y"
-path="res://.godot/imported/Dimensional_Portal.png-6eb4f28dd46fba5b918aa4e34cf373cc.ctex"
+uid="uid://tah8o1bridjg"
+path="res://.godot/imported/darkdungeon_tileset_decorations.png-a2c6b58956c52a25b92db4225d73ce24.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/Dimensional_Portal.png"
-dest_files=["res://.godot/imported/Dimensional_Portal.png-6eb4f28dd46fba5b918aa4e34cf373cc.ctex"]
+source_file="res://Assets/World/Old/darkdungeon_tileset_decorations.png"
+dest_files=["res://.godot/imported/darkdungeon_tileset_decorations.png-a2c6b58956c52a25b92db4225d73ce24.ctex"]
 
 [params]
 

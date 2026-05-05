@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ge2bglall2gj"
-path="res://.godot/imported/darkdungeon_tileset_floor_and_stairs.png-580c80dc713c17202c042aba3f9c1906.ctex"
+uid="uid://bgeio1odkhifl"
+path="res://.godot/imported/Purple Portal Sprite Sheet.png-63cb8e80660ced56177f82325ed8dab5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/darkdungeon_tileset_floor_and_stairs.png"
-dest_files=["res://.godot/imported/darkdungeon_tileset_floor_and_stairs.png-580c80dc713c17202c042aba3f9c1906.ctex"]
+source_file="res://Assets/World/Old/Purple Portal Sprite Sheet.png"
+dest_files=["res://.godot/imported/Purple Portal Sprite Sheet.png-63cb8e80660ced56177f82325ed8dab5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kdusg5swjfxl"
-path="res://.godot/imported/TX Props.png-dbb7cead814d9320bb7932847647e661.ctex"
+uid="uid://cgsu5micklbmo"
+path="res://.godot/imported/darkdungeon_tileset_walls.png-57941d04fe702f1b13a43c4a19fcdb4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/TX Props.png"
-dest_files=["res://.godot/imported/TX Props.png-dbb7cead814d9320bb7932847647e661.ctex"]
+source_file="res://Assets/World/Old/darkdungeon_tileset_walls.png"
+dest_files=["res://.godot/imported/darkdungeon_tileset_walls.png-57941d04fe702f1b13a43c4a19fcdb4c.ctex"]
 
 [params]
 

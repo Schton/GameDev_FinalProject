@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bp0e6vvmxb1a6"]
 
-[ext_resource type="Texture2D" uid="uid://ge2bglall2gj" path="res://Assets/World/darkdungeon_tileset_floor_and_stairs.png" id="1_cbovm"]
-[ext_resource type="Texture2D" uid="uid://cgsu5micklbmo" path="res://Assets/World/darkdungeon_tileset_walls.png" id="2_qbqqv"]
-[ext_resource type="Texture2D" uid="uid://tah8o1bridjg" path="res://Assets/World/darkdungeon_tileset_decorations.png" id="3_e25pv"]
-[ext_resource type="Texture2D" uid="uid://bfp4yghbw5pxs" path="res://Assets/World/darkdungeon_tileset_water.png" id="4_hh67b"]
+[ext_resource type="Texture2D" uid="uid://ge2bglall2gj" path="res://Assets/World/Old/darkdungeon_tileset_floor_and_stairs.png" id="1_cbovm"]
+[ext_resource type="Texture2D" uid="uid://cgsu5micklbmo" path="res://Assets/World/Old/darkdungeon_tileset_walls.png" id="2_qbqqv"]
+[ext_resource type="Texture2D" uid="uid://tah8o1bridjg" path="res://Assets/World/Old/darkdungeon_tileset_decorations.png" id="3_e25pv"]
+[ext_resource type="Texture2D" uid="uid://bfp4yghbw5pxs" path="res://Assets/World/Old/darkdungeon_tileset_water.png" id="4_hh67b"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_k1sri"]
 tile_data = PackedInt32Array(0, 4, 0, 65536, 4, 2, 131072, 4, 3, 196608, 4, 4, 1, 131076, 0, 65537, 131076, 2, 131073, 131076, 3, 196609, 131076, 4)

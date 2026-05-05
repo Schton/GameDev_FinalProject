@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgsu5micklbmo"
-path="res://.godot/imported/darkdungeon_tileset_walls.png-b3b1414529691c6b4800265ef7cd3ce5.ctex"
+uid="uid://bblrfxooebg5k"
+path="res://.godot/imported/darkdungeon_tileset_allinone.png-64735a88ef7d8ed8ae9541c2e37f8026.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/World/darkdungeon_tileset_walls.png"
-dest_files=["res://.godot/imported/darkdungeon_tileset_walls.png-b3b1414529691c6b4800265ef7cd3ce5.ctex"]
+source_file="res://Assets/World/Old/darkdungeon_tileset_allinone.png"
+dest_files=["res://.godot/imported/darkdungeon_tileset_allinone.png-64735a88ef7d8ed8ae9541c2e37f8026.ctex"]
 
 [params]
 
