@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b16vjgrwqjjcb"]
 
-[ext_resource type="Texture2D" uid="uid://dlub5q4wqtv3a" path="res://Assets/World/Characters/NPC merchant - with animated items/character-spritesheet.png" id="1_lttrc"]
+[ext_resource type="Texture2D" uid="uid://dlub5q4wqtv3a" path="res://Assets/Character/character-spritesheet.png" id="1_lttrc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cni87"]
 atlas = ExtResource("1_lttrc")
