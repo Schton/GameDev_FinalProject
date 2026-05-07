@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oxq3x2qu0sfl"
-path="res://.godot/imported/ZTX Props with Shadow.png-9b8fed792bfdefe08d28e3dab02b7239.ctex"
+uid="uid://da7fq1qudls07"
+path="res://.godot/imported/Ground.png-88e618c590b40299c84a2101ca61be8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Safe_Zone_Assets/ZTX Props with Shadow.png"
-dest_files=["res://.godot/imported/ZTX Props with Shadow.png-9b8fed792bfdefe08d28e3dab02b7239.ctex"]
+source_file="res://Assets/World/Ground.png"
+dest_files=["res://.godot/imported/Ground.png-88e618c590b40299c84a2101ca61be8c.ctex"]
 
 [params]
 

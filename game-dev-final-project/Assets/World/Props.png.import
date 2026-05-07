@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bobgsbasatl2n"
-path="res://.godot/imported/Props.png-39ebde1b54865849b6493fea87bcf257.ctex"
+path="res://.godot/imported/Props.png-b5571ee0920ca885a2289f871e1bafd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Safe_Zone_Assets/Props.png"
-dest_files=["res://.godot/imported/Props.png-39ebde1b54865849b6493fea87bcf257.ctex"]
+source_file="res://Assets/World/Props.png"
+dest_files=["res://.godot/imported/Props.png-b5571ee0920ca885a2289f871e1bafd1.ctex"]
 
 [params]
 

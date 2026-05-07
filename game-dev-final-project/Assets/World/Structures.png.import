@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8s5blei4sh8g"
-path="res://.godot/imported/ZTX Plant with Shadow.png-54c2dc864470403456fdcbf48c442e2f.ctex"
+uid="uid://clm8syhbqn4dx"
+path="res://.godot/imported/Structures.png-364c9dedaca417d7827b4874571affb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Safe_Zone_Assets/ZTX Plant with Shadow.png"
-dest_files=["res://.godot/imported/ZTX Plant with Shadow.png-54c2dc864470403456fdcbf48c442e2f.ctex"]
+source_file="res://Assets/World/Structures.png"
+dest_files=["res://.godot/imported/Structures.png-364c9dedaca417d7827b4874571affb1.ctex"]
 
 [params]
 

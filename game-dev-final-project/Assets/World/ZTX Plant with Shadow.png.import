@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci25jrpsc58ow"
-path="res://.godot/imported/character-spritesheet.png-8f1c6f7085a855c2a4aae90dfdad63f4.ctex"
+uid="uid://b8s5blei4sh8g"
+path="res://.godot/imported/ZTX Plant with Shadow.png-772d1399fbad520885cd46d9bfa033ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Safe_Zone_Npc/character-spritesheet.png"
-dest_files=["res://.godot/imported/character-spritesheet.png-8f1c6f7085a855c2a4aae90dfdad63f4.ctex"]
+source_file="res://Assets/World/ZTX Plant with Shadow.png"
+dest_files=["res://.godot/imported/ZTX Plant with Shadow.png-772d1399fbad520885cd46d9bfa033ad.ctex"]
 
 [params]
 

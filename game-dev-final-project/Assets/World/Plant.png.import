@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cp5aydqqrv28w"
-path="res://.godot/imported/Walls.png-8623a3126b6b04eba02cbbfbb7b09818.ctex"
+uid="uid://cbv1twcgvshni"
+path="res://.godot/imported/Plant.png-9bc4801d6c1067f3ee14b0ec312624f6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Safe_Zone_Assets/Walls.png"
-dest_files=["res://.godot/imported/Walls.png-8623a3126b6b04eba02cbbfbb7b09818.ctex"]
+source_file="res://Assets/World/Plant.png"
+dest_files=["res://.godot/imported/Plant.png-9bc4801d6c1067f3ee14b0ec312624f6.ctex"]
 
 [params]
 
