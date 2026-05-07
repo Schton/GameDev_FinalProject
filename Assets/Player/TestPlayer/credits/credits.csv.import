@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c0aojhsuilr6e"
+
+[deps]
+
+files=["res://Assets/Player/TestPlayer/credits/credits.notes.translation", "res://Assets/Player/TestPlayer/credits/credits.authors.translation", "res://Assets/Player/TestPlayer/credits/credits.licenses.translation", "res://Assets/Player/TestPlayer/credits/credits.urls.translation"]
+
+source_file="res://Assets/Player/TestPlayer/credits/credits.csv"
+dest_files=["res://Assets/Player/TestPlayer/credits/credits.notes.translation", "res://Assets/Player/TestPlayer/credits/credits.authors.translation", "res://Assets/Player/TestPlayer/credits/credits.licenses.translation", "res://Assets/Player/TestPlayer/credits/credits.urls.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true
