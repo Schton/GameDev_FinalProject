@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dvd1xq16jxgmg"]
+
+[ext_resource type="Texture2D" uid="uid://b7pt6sbmel5h7" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree1.png" id="1_0op1l"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dej5u"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(0, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8sy5w"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(192, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b3og5"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(384, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikaso"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(576, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahhti"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(768, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hhg4g"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(960, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f5bqd"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(1152, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_svwru"]
+atlas = ExtResource("1_0op1l")
+region = Rect2(1344, 0, 192, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_df5hd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dej5u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8sy5w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b3og5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikaso")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahhti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hhg4g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f5bqd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_svwru")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=916467849]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1846482743]
+y_sort_enabled = true
+sprite_frames = SubResource("SpriteFrames_df5hd")
+autoplay = "default"
+frame_progress = 0.47006965
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2131617511]

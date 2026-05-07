@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://bngxx86jo2o74"]
+
+[ext_resource type="Texture2D" uid="uid://cvujmtcxxliov" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree3.png" id="1_wmopn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6lkyb"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7epnf"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gy1ll"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w0fmi"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_butvq"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1lw4"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(960, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_itxep"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(1152, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eli1t"]
+atlas = ExtResource("1_wmopn")
+region = Rect2(1344, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_46hoe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6lkyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7epnf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gy1ll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w0fmi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_butvq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r1lw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_itxep")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eli1t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1222128364]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1950200322]
+sprite_frames = SubResource("SpriteFrames_46hoe")
+autoplay = "default"
