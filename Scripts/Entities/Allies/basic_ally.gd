@@ -4,15 +4,19 @@ enum Faction { PLAYER, ENEMY }
 @export var faction = Faction.PLAYER  # ally default
 
 var current_duelist: CharacterBody2D = null # The person currently fighting me
-@export var is_ally := false # Set true for followers, false for enemies
+@export var is_ally := true # Set true for followers, false for enemies
 
 @export var strafe_time_limit := 2.5 # How long they circle before charging back in
 @export var hits_to_trigger_strafe := 2 # How many hits they take before backing off
+
+signal unit_died(pos)
 
 var strafe_timer := 0.0
 var hits_taken_recently := 0
 
 var is_attacking_anim := false
+
+var external_push := Vector2.ZERO
 
 # =====================================================
 # ADVANCED SOULSLIKE ENEMY AI (Godot 4)
@@ -63,6 +67,12 @@ var offset = Vector2.ZERO
 @export var stun_time := 0.35
 
 # ==========================
+# PHYSICS / MASS
+# ==========================
+@export var mass := 1.0          # 1.0 = baseline. Higher = pushes others, resists pushes.
+@export var knockback_base := 220.0
+
+# ==========================
 # REFERENCES
 # ==========================
 @onready var anim = $AnimatedSprite2D
@@ -105,12 +115,14 @@ func _ready():
 # =====================================================
 func _physics_process(delta):
 
+	external_push = external_push.move_toward(Vector2.ZERO, 300.0 * delta)
+
 	if target == null or not is_instance_valid(target):
 		find_target()
 
 # If STILL no target, just idle safely
 	if target == null:
-		velocity = Vector2.ZERO
+		velocity = external_push
 		move_and_slide()
 		update_animation()
 		return
@@ -148,10 +160,10 @@ func _physics_process(delta):
 			state_return_home()
 
 		State.DEAD:
-			velocity = Vector2.ZERO
+			velocity = external_push
 
 	if velocity.length() < 5:
-		velocity = Vector2.ZERO
+		velocity = external_push
 
 	move_and_slide()
 	update_animation()
@@ -167,9 +179,9 @@ func state_follow():
 
 	if dist > 15:
 		var dir = global_position.direction_to(desired_pos)
-		velocity = (dir * move_speed) + apply_separation()
+		velocity = (dir * move_speed) + apply_separation() + external_push
 	else:
-		velocity = Vector2.ZERO
+		velocity = external_push
 
 	find_target()
 	if target != null and distance_to_target() < detect_range:
@@ -197,13 +209,13 @@ func state_engage():
 
 
 func state_idle():
-	velocity = Vector2.ZERO
+	velocity = external_push
 
 	if distance_to_target() < detect_range:
 		state = State.CHASE
 
 func state_patrol():
-	velocity = Vector2.ZERO
+	velocity = external_push
 
 func state_chase():
 	var dist = distance_to_target()
@@ -229,7 +241,7 @@ func state_chase():
 		# we let the code fall through to the movement logic below.
 
 	# 3. Movement logic
-	velocity = (dir * move_speed) + apply_separation()
+	velocity = (dir * move_speed) + apply_separation() + external_push
 	velocity = velocity.limit_length(move_speed)
 	last_move_dir = dir
 
@@ -298,10 +310,10 @@ func state_strafe():
 		try_attack()
 
 func state_attack():
-	velocity = Vector2.ZERO
+	velocity = external_push
 
 func state_stun(delta):
-	velocity = Vector2.ZERO
+	velocity = external_push
 
 	stun_timer -= delta
 	if stun_timer <= 0:
@@ -321,7 +333,7 @@ func state_return_home():
 		return
 
 	var dir = global_position.direction_to(spawn_position)
-	velocity = (dir * move_speed) + apply_separation()
+	velocity = (dir * move_speed) + apply_separation() + external_push
 	velocity = velocity.limit_length(move_speed)
 	last_move_dir = dir
 
@@ -350,7 +362,7 @@ func start_attack():
 	can_attack = false
 	add_to_group("attackers")
 
-	velocity = Vector2.ZERO
+	velocity = external_push
 
 	is_attacking_anim = true
 
@@ -439,19 +451,24 @@ func take_damage(amount, knock_dir := Vector2.ZERO, attacker = null):
 	state = State.STUN
 	stun_timer = stun_time
 
-	velocity = knock_dir * 220
+	# Mass-scaled knockback: heavy attackers push hard, heavy victims resist.
+	var attacker_mass := 1.0
+	if attacker and "mass" in attacker:
+		attacker_mass = attacker.mass
+	velocity = knock_dir * knockback_base * (attacker_mass / max(mass, 0.01))
 
 	# anim.play("hurt_" + get_dir(direction_to_target()))
 	print("Enemy HP:", health)
 
 func die():
+	unit_died.emit(global_position)
 
 	state = State.DEAD
 
 	if is_instance_valid(target) and "current_duelist" in target:
 		target.current_duelist = null
 
-	velocity = Vector2.ZERO
+	velocity = external_push
 	anim.play("death")
 
 	await anim.animation_finished
@@ -510,15 +527,31 @@ func get_dir(dir: Vector2) -> String:
 func apply_separation():
 	var units = get_tree().get_nodes_in_group("units")
 	var push = Vector2.ZERO
+	var my_mass: float = mass if mass > 0.01 else 1.0
 
 	for u in units:
 		if u == self:
 			continue
+		if not is_instance_valid(u):
+			continue
 
 		var dist = global_position.distance_to(u.global_position)
-		if dist < 25: # Smaller radius
-		# The further away they are, the less they push
-			var strength = 1.0 - (dist / 25.0)
-			push += (global_position - u.global_position).normalized() * strength
+		if dist >= 25.0:
+			continue
+
+		# Pull other unit's mass; default 1.0 if it doesn't expose one.
+		var other_mass: float = 1.0
+		if "mass" in u:
+			other_mass = u.mass if u.mass > 0.01 else 1.0
+
+		# Distance falloff (same curve as before).
+		var strength = 1.0 - (dist / 25.0)
+
+		# Mass ratio: a unit twice my mass pushes me twice as hard.
+		# A unit half my mass barely nudges me.
+		var mass_ratio = other_mass / my_mass
+
+		push += (global_position - u.global_position).normalized() \
+				* strength * mass_ratio
 
 	return push * 15.0 # Lowered multiplier
