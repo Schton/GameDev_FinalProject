@@ -2167,4 +2167,4 @@ position = Vector2(532, 501)
 position = Vector2(-646, 584)
 unit_scene = ExtResource("4_010cr")
 kills_required = 20
-capture_radius = 2000.0
+capture_radius = 500.0

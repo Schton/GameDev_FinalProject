@@ -1,5 +1,8 @@
 extends Node2D
 
+@export var zone_color := Color(1, 0, 0, 0.1) # Faint red
+@export var border_color := Color(1, 0, 0, 0.3) # Slightly darker red for the edge
+
 @export_group("Spawn Settings")
 @export var unit_scene: PackedScene # Drag Enemy.tscn or Ally.tscn here
 @export var max_units := 5           # Max units this spawner can have alive
@@ -74,3 +77,6 @@ func capture_zone_complete():
 func _draw():
 	if Engine.is_editor_hint() or OS.is_debug_build():
 		draw_circle(Vector2.ZERO, spawn_range, Color(1, 0, 0, 0.2)) # Light red circle
+
+	draw_circle(Vector2.ZERO, capture_radius, zone_color)
+	draw_arc(Vector2.ZERO, capture_radius, 0, TAU, 100, border_color, 2.0)

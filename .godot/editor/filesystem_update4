@@ -1,11 +1,3 @@
-res://Scenes/Player/player.tscn
-res://Scenes/Entities/Ally/basic_ally.tscn
-res://Scenes/Entities/Enemy/basic_enemy.tscn
-res://Scripts/Player/player.gd
-res://Scripts/Entities/Enemies/basic_enemy.gd
-res://Scripts/Entities/Allies/basic_ally.gd
-res://Scenes/World/map_1.tscn
-res://Scenes/World/test_map.tscn
 res://Scenes/Entities/unit_spawner.tscn
 res://Scripts/Entities/unit_spawner.gd
-res://Scenes/Entities/projectile.tscn
+res://Scenes/World/test_map.tscn
