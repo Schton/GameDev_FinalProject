@@ -726,6 +726,7 @@ radius = 15.0
 height = 50.0
 
 [node name="BasicAlly" type="CharacterBody2D" unique_id=1367043656]
+z_index = 100
 collision_layer = 4
 collision_mask = 6
 script = ExtResource("1_5j57s")

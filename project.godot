@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="GameDev Project - Prototype"
-run/main_scene="uid://bw3x8h55gwchs"
+run/main_scene="uid://iog5hscf6wx4"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
