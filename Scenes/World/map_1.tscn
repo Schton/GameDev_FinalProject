@@ -30,6 +30,7 @@
 [ext_resource type="Texture2D" uid="uid://jssmy27lb4ac" path="res://Assets/Buildings/Red Buildings/Tower.png" id="27_cc8m1"]
 [ext_resource type="PackedScene" uid="uid://bngxx86jo2o74" path="res://Scenes/World/tree3.tscn" id="28_onf4b"]
 [ext_resource type="PackedScene" uid="uid://bnv2vsiy35uds" path="res://Scenes/World/tree4.tscn" id="30_tvhix"]
+[ext_resource type="PackedScene" uid="uid://cmhvxa0nsf46p" path="res://Scenes/Player/player.tscn" id="31_v4gar"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_5tr0j"]
 tile_data = PackedInt32Array(0, 2031622, 11, 65536, 262150, 5, 131072, 262150, 6, 196608, 262150, 7, 262144, 262150, 6, 327680, 262150, 7, 393216, 262150, 6, 458752, 262150, 7, 524288, 2031622, 11, 65537, 786438, 17, 131073, 786438, 18, 196609, 786438, 19, 262145, 786438, 18, 327681, 786438, 19, 393217, 786438, 18, 458753, 786438, 19, 524289, 786438, 20, 589825, 786438, 21, 655361, 786438, 22, 720897, 786438, 23, 65538, 851974, 17, 131074, 851974, 18, 196610, 851974, 19, 262146, 851974, 20, 327682, 786438, 18, 393218, 786438, 18, 458754, 786438, 18, 524290, 786438, 19, 589826, 851974, 21, 655362, 851974, 22, 720898, 851974, 23, 131075, 917510, 18, 196611, 917510, 19, 262147, 917510, 20, 327683, 917510, 21, 393219, 917510, 20, 458755, 917510, 20, 524291, 917510, 20, 589827, 917510, 21, 655363, 917510, 22, 720899, 917510, 23, 196612, 983046, 19, 262148, 983046, 20, 327684, 983046, 21, 393220, 983046, 21, 458756, 983046, 21, 524292, 983046, 21, 589828, 983046, 22, 655364, 983046, 22, 720900, 983046, 23)
@@ -14697,3 +14698,7 @@ position = Vector2(-2265, -285)
 position = Vector2(-2472, 368)
 
 [node name="AirLayer" type="TileMapLayer" parent="." unique_id=2112470307]
+
+[node name="Player" parent="." unique_id=825991009 instance=ExtResource("31_v4gar")]
+z_index = 100
+position = Vector2(305, -322)

@@ -4,10 +4,12 @@ enum Faction { PLAYER, ENEMY }
 @export var faction = Faction.ENEMY  # enemy default
 
 var current_duelist: CharacterBody2D = null # The person currently fighting me
-@export var is_ally := true # Set true for followers, false for enemies
+@export var is_ally := false # Set true for followers, false for enemies
 
 @export var strafe_time_limit := 2.5 # How long they circle before charging back in
 @export var hits_to_trigger_strafe := 2 # How many hits they take before backing off
+
+signal unit_died(pos)
 
 var strafe_timer := 0.0
 var hits_taken_recently := 0
@@ -139,6 +141,20 @@ func _physics_process(delta):
 
 	if velocity.length() < 5:
 		velocity = Vector2.ZERO
+
+# === PUSH LOGIC ===
+	# Check all collisions that happened during move_and_slide()
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()    
+		# If the player is the one who hit us
+		if collider is CharacterBody2D and "faction" in collider:
+			if collider.faction == Faction.PLAYER and not is_ally:
+					# Apply a slight shove in the direction the player is moving
+				velocity += collider.velocity * 0.5 
+			elif collider.faction == Faction.PLAYER and is_ally:
+					# Allies are easier to push (friendliness!)
+				velocity += collider.velocity * 0.8
 
 	move_and_slide()
 	update_animation()
@@ -407,6 +423,7 @@ func take_damage(amount, knock_dir := Vector2.ZERO, attacker = null):
 	print("Enemy HP:", health)
 
 func die():
+	unit_died.emit(global_position)
 
 	state = State.DEAD
 

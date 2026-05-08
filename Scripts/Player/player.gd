@@ -229,7 +229,9 @@ func fire_projectile():
 
 func start_dash():
 	is_dashing = true
+	set_collision_mask_value(3, false)
 	await get_tree().create_timer(dash_duration).timeout
+	set_collision_mask_value(3, true)
 	is_dashing = false
 
 func get_facing_vector() -> Vector2:
