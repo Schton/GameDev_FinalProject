@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ci8v58v0y3uaq"]
+
+[ext_resource type="Script" uid="uid://crmhvwbsqhxxy" path="res://Scripts/Entities/unit_spawner.gd" id="1_bd0cf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bd0cf"]
+
+[node name="UnitSpawner" type="Node2D" unique_id=663723690]
+script = ExtResource("1_bd0cf")
+
+[node name="Timer" type="Timer" parent="." unique_id=1325444729]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=2085804168]
+
+[node name="CaptureZone" type="Area2D" parent="." unique_id=1905693221]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CaptureZone" unique_id=1039459751]
+scale = Vector2(20, 20)
+shape = SubResource("CircleShape2D_bd0cf")
