@@ -53,7 +53,7 @@ var state = State.IDLE
 @export var strafe_range := 70.0
 
 @export var max_health := 100
-@export var attack_damage := 15
+@export var attack_damage := 150
 
 @export var attack_cooldown := 1.2
 @export var stun_time := 0.35

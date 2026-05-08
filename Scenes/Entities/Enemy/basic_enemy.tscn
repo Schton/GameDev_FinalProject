@@ -670,19 +670,32 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ybc0j"]
+radius = 5.0
+height = 24.0
+
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b6p6u"]
 radius = 15.0
 height = 50.0
 
 [node name="BasicEnemy" type="CharacterBody2D" unique_id=1367043656]
 collision_layer = 4
-collision_mask = 6
+collision_mask = 7
 script = ExtResource("1_og6du")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=42447682]
 sprite_frames = SubResource("SpriteFrames_74jpl")
 animation = &"attack_right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=871503105]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1332714608]
+position = Vector2(1, 25)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_ybc0j")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=876379719]
+collision_layer = 0
+collision_mask = 5
+
+[node name="Hitbox" type="CollisionShape2D" parent="Area2D" unique_id=871503105]
 position = Vector2(0, 8)
 shape = SubResource("CapsuleShape2D_b6p6u")
