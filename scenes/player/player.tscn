@@ -789,42 +789,66 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmlin"]
-radius = 15.0
-height = 46.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a3d8c"]
+radius = 5.0
+height = 24.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75vfm"]
 size = Vector2(64.0625, 63.3125)
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gmlin"]
+radius = 11.0
+height = 46.0
+
 [node name="Player" type="CharacterBody2D" unique_id=825991009 groups=["player"]]
 z_index = 15
-collision_mask = 7
+y_sort_enabled = true
+collision_mask = 6
 script = ExtResource("1_dovo2")
 projectile_scene = ExtResource("2_gmlin")
 projectile_distance = 5000.0
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1190870036]
+y_sort_enabled = true
+position = Vector2(0, -21)
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=286672406]
+y_sort_enabled = true
+position = Vector2(0, -10)
 sprite_frames = SubResource("SpriteFrames_lvxji")
 animation = &"cast_up"
 frame = 6
 frame_progress = 1.0
+offset = Vector2(0, -15)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=960100907]
-position = Vector2(0, 6)
-shape = SubResource("CapsuleShape2D_gmlin")
+[node name="EnvironmentCollision" type="CollisionShape2D" parent="." unique_id=1725552356]
+y_sort_enabled = true
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_a3d8c")
 
 [node name="SwordHitbox" type="Area2D" parent="." unique_id=1745967163]
-collision_layer = 8
+y_sort_enabled = true
+position = Vector2(0, -21)
+collision_layer = 0
 collision_mask = 4
 input_pickable = false
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SwordHitbox" unique_id=2104006042]
+y_sort_enabled = true
 rotation = 1.5707964
 scale = Vector2(0.8, 1.4)
 shape = SubResource("RectangleShape2D_75vfm")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1194260596]
+y_sort_enabled = true
+position = Vector2(0, -18)
+collision_layer = 0
+collision_mask = 6
+
+[node name="Hitbox" type="CollisionShape2D" parent="Area2D" unique_id=960100907]
+y_sort_enabled = true
+shape = SubResource("CapsuleShape2D_gmlin")
 
 [connection signal="animation_finished" from="Sprite2D" to="." method="_on_sprite_2d_animation_finished"]
 [connection signal="body_entered" from="SwordHitbox" to="." method="_on_sword_hitbox_body_entered"]
