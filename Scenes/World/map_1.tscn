@@ -15370,7 +15370,7 @@ texture = ExtResource("27_cc8m1")
 
 [node name="Player" parent="." unique_id=825991009 instance=ExtResource("31_v4gar")]
 z_index = 20
-position = Vector2(703, 224)
+position = Vector2(1086, -208)
 
 [node name="UnitSpawner" parent="." unique_id=663723690 instance=ExtResource("27_hdvvc")]
 z_index = 35

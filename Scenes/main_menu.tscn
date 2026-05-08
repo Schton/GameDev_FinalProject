@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://dtv74uhpsuh6l"]
+
+[ext_resource type="Script" uid="uid://vc0nvvmh1n02" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
+[ext_resource type="Texture2D" uid="uid://cm74ydkbcclfe" path="res://Assets/UI Elements/MainMenuBG.png" id="1_48xlc"]
+[ext_resource type="FontFile" uid="uid://cwavu1ymcxygq" path="res://Assets/UI Elements/alagard_by_pix3m-d6awiwp.ttf" id="2_1ehe0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ce3w2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n45e2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_opfnp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cp0ys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yhxw7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_trj04"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_16hvj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vr1f0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1dhk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5egv6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vtepg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_48xlc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1ehe0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8dnnj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m3bi6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wyh8j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ujyyl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mkpwh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4nkqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ehtkc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6dk6o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jr6u5"]
+
+[node name="MainMenu" type="Control" unique_id=294060902]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ehe0")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1257708632]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_48xlc")
+expand_mode = 1
+flip_h = true
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=295346129]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.201
+anchor_right = 0.51500005
+anchor_bottom = 1.0
+offset_left = 0.44799805
+offset_right = -265.28003
+grow_vertical = 2
+
+[node name="ButtonManager" type="VBoxContainer" parent="MarginContainer" unique_id=519784355]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 64
+
+[node name="Start" type="Button" parent="MarginContainer/ButtonManager" unique_id=468386879]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_1ehe0")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ce3w2")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_n45e2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_opfnp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_cp0ys")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_yhxw7")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_trj04")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_16hvj")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_vr1f0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_t1dhk")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_5egv6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vtepg")
+text = "Start Game
+"
+
+[node name="Quit" type="Button" parent="MarginContainer/ButtonManager" unique_id=360860449]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_fonts/font = ExtResource("2_1ehe0")
+theme_override_font_sizes/font_size = 72
+theme_override_styles/normal = SubResource("StyleBoxEmpty_48xlc")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_1ehe0")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8dnnj")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_m3bi6")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wyh8j")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ujyyl")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_mkpwh")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_4nkqq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ehtkc")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6dk6o")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jr6u5")
+text = "Quit
+"
+
+[connection signal="pressed" from="MarginContainer/ButtonManager/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MarginContainer/ButtonManager/Quit" to="." method="_on_quit_pressed"]
