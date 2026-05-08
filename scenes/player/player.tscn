@@ -797,10 +797,13 @@ height = 46.0
 size = Vector2(64.0625, 63.3125)
 
 [node name="Player" type="CharacterBody2D" unique_id=825991009 groups=["player"]]
-collision_mask = 6
+z_index = 15
+collision_mask = 7
 script = ExtResource("1_dovo2")
 projectile_scene = ExtResource("2_gmlin")
 projectile_distance = 5000.0
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1190870036]
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="." unique_id=286672406]
 sprite_frames = SubResource("SpriteFrames_lvxji")
