@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://b66qq5l00svt4"]
+
+[ext_resource type="Texture2D" uid="uid://bgeio1odkhifl" path="res://Assets/World/Old/Purple Portal Sprite Sheet.png" id="1_lvd5j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdgx6"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bseyl"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mtwac"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rf6x2"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_av48w"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_koq56"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsgt0"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7shum"]
+atlas = ExtResource("1_lvd5j")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uwbmw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdgx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bseyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mtwac")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rf6x2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_av48w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_koq56")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsgt0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7shum")
+}],
+"loop": true,
+"name": &"Activated",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=7267402]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1978833455]
+sprite_frames = SubResource("SpriteFrames_uwbmw")
+animation = &"Activated"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=195609785]
