@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1778261924
+::res://::1778264310
 icon.svg::CompressedTexture2D::6187555772859376998::1777729632::1777729632::1::::<><><>0<>0<>9f577aaeae1a5cb0c365607852573c83<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1778160057::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1778160108
@@ -81,7 +81,7 @@ spellcast.png::CompressedTexture2D::5442056785040032967::1777729632::1778158090:
 thrust.png::CompressedTexture2D::3952994408830893595::1777729632::1778158090::1::::<><><>0<>0<>94b7b9f80e476fe56eaa44d2af378243<>res://.godot/imported/thrust.png-52bfcc3a19cffef63754abdfe417c987.ctex::
 walk.png::CompressedTexture2D::2005393685171856433::1777729632::1778158090::1::::<><><>0<>0<>1370ffbacb8c439ee001c728dfb5504c<>res://.godot/imported/walk.png-38e10e7bca30167f1ae48fe6312e9484.ctex::
 watering.png::CompressedTexture2D::8965578179517224749::1777729632::1778158090::1::::<><><>0<>0<>f44685ec2b08b40bbce1c0c5dfa8dc93<>res://.godot/imported/watering.png-f7da2c038994eef0784e9e0b06ab2bcc.ctex::
-::res://Assets/Player/::1778158430
+::res://Assets/Player/::1778263759
 ::res://Assets/Player/TestPlayer/::1778158430
 character-spritesheet.png::CompressedTexture2D::1561865825275475460::1777729632::1778158421::1::::<><><>0<>0<>194e905d7777e21a80fab8ace0d969b1<>res://.godot/imported/character-spritesheet.png-65f55a981dbe43abe2315f58be75df68.ctex::
 character.json::JSON::-1::1778158376::0::1::::<><><>0<>0<><>::
@@ -244,35 +244,17 @@ Tileset-Animated Terrains-8 frames-.png::CompressedTexture2D::173945855498603652
 Tileset-Terrain2.png::CompressedTexture2D::9101907842555231825::1778160057::1778160077::1::::<><><>0<>0<>9a41d98725d5dd385714283029843675<>res://.godot/imported/Tileset-Terrain2.png-c6bb919fecfc097d9857f327fb93fdbd.ctex::
 wall-8 - 2 tiles tall-transparency.png::CompressedTexture2D::9143042341147914828::1778160057::1778160077::1::::<><><>0<>0<>d58132e31ba743e5a93fc7b804849d4e<>res://.godot/imported/wall-8 - 2 tiles tall-transparency.png-6020b4976858e1fb5c9e26b76ff00184.ctex::
 wall-8 - 2 tiles tall.png::CompressedTexture2D::6349542924255198845::1778160057::1778160077::1::::<><><>0<>0<>cb09e46f0d102494a6fee115a0cb950d<>res://.godot/imported/wall-8 - 2 tiles tall.png-f5bcd57ec707ca08dfcff84b398e6aa5.ctex::
-::res://Scenes/::1778261700
-::res://Scenes/Entities/::1778261700
-projectile.tscn::PackedScene::1401509488600614267::1778261693::0::1::::<><><>0<>0<><>::uid://b7r7ve20sel2l::::res://Scripts/Entities/projectile.gd<>uid://dleyws2vtekqf::::res://Assets/World/fireball_test.png
-unit_spawner.tscn::PackedScene::8619247596623912149::1778258016::0::1::::<><><>0<>0<><>::uid://b54o6j3l408pj::::res://Scripts/Entities/unit_spawner.gd
-::res://Scenes/Entities/Ally/::1778252877
-basic_ally.tscn::PackedScene::5888139111771081884::1778252877::0::1::::<><><>0<>0<><>::uid://n7trbgetqpm1::::res://Scripts/Entities/Allies/basic_ally.gd<>uid://vwfuhaecsc8r::::res://Assets/Entities/Ally/Basic_Ally01.png
-::res://Scenes/Entities/Enemy/::1778252877
-basic_enemy.tscn::PackedScene::6226479190407531303::1778252877::0::1::::<><><>0<>0<><>::uid://cxyr12ru4uxiw::::res://Scripts/Entities/Enemies/basic_enemy.gd<>uid://fuopif3061bh::::res://Assets/Entities/Enemy/Basic_Enemy01/custom/slash_128.png<>uid://dwidakmpds27q::::res://Assets/Entities/Enemy/Basic_Enemy01/standard/idle.png<>uid://bwoachmh86pyc::::res://Assets/Entities/Enemy/Basic_Enemy01/standard/hurt.png<>uid://3tosnnt6cg46::::res://Assets/Entities/Enemy/Basic_Enemy01/standard/walk.png<>uid://elcgqy4b7vc6::::res://Assets/Entities/Enemy/Basic_Enemy01/standard/sit.png<>uid://cjsf46pva8x1p::::res://Assets/Entities/Enemy/Basic_Enemy01/standard/spellcast.png
-::res://Scenes/Player/::1778258780
-player.tscn::PackedScene::5630874304663973577::1778258776::0::1::::<><><>0<>0<><>::uid://bhlkl6inldqf4::::res://Scripts/Player/player.gd<>uid://t75wk6vq6cet::::res://Scenes/Entities/projectile.tscn
-::res://Scenes/World/::1778258729
-game_scene.tscn::PackedScene::332505368675305812::1778160057::0::1::::<><><>0<>0<><>::
-map_1.tscn::PackedScene::590830309003569291::1778258725::0::1::::<><><>0<>0<><>::uid://bo0drhibojc67::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png<>uid://chei7qhbgjss4::::res://Assets/World/Terrain/Tileset/Water Background color.png<>uid://c00piqpyijhwt::::res://Assets/World/Terrain/Tileset/Water Foam.png<>uid://074pibnsawrs::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png<>uid://c281lrgxiskjq::::res://Assets/World/MainLev2.0.png<>uid://bvdtjgxf60lbt::::res://Assets/World/Terrain/Tileset/Tilemap_color1.png<>uid://c7ujvpm68yuse::::res://Assets/World/Terrain/Tileset/Tilemap_color2.png<>uid://ff3b4j2ej35i::::res://Assets/World/Terrain/Tileset/Tilemap_color3.png<>uid://d1wmi105fxyh7::::res://Assets/World/Terrain/Tileset/Tilemap_color4.png<>uid://biundhblqws1m::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png<>uid://bsaqwx6o0daa5::::res://Assets/World/Terrain/Tileset/Tilemap_color5.png<>uid://0nrhrycxeah0::::res://Assets/World/Props/Atlas-Props.png<>uid://b7pt6sbmel5h7::::res://Assets/World/Terrain/Resources/Wood/Trees/Tree1.png<>uid://bocl0yi1kq5fh::::res://Assets/World/Terrain/Resources/Wood/Trees/Tree2.png<>uid://dmm8ehyp7w24d::::res://Scenes/World/rock4.tscn<>uid://dvd1xq16jxgmg::::res://Scenes/World/Tree2.tscn<>uid://c6tg01po4hj0h::::res://Assets/Buildings/Blue Buildings/Tower.png<>uid://cd27kukeqvguy::::res://Scenes/World/rock2.tscn<>uid://djkc2fmrn2svv::::res://Assets/Buildings/Blue Buildings/Archery.png<>uid://b8fxhksujgu0t::::res://Assets/Buildings/Blue Buildings/Barracks.png<>uid://ca43jn7iww6wx::::res://Scenes/World/rock1.tscn<>uid://di630lnkb0h74::::res://Scenes/World/rock3.tscn<>uid://ditmqyjhnl1du::::res://Assets/Buildings/Blue Buildings/Castle.png<>uid://kdusg5swjfxl::::res://Assets/World/TX Props.png<>uid://cy45bbxct4d4p::::res://Assets/Buildings/Red Buildings/Archery.png<>uid://50vwfyi2gu3x::::res://Assets/Buildings/Red Buildings/Barracks.png<>uid://bg12ovyqdejbh::::res://Assets/Buildings/Red Buildings/Castle.png<>uid://jssmy27lb4ac::::res://Assets/Buildings/Red Buildings/Tower.png<>uid://bngxx86jo2o74::::res://Scenes/World/tree3.tscn<>uid://bnv2vsiy35uds::::res://Scenes/World/tree4.tscn<>uid://cmhvxa0nsf46p::::res://Scenes/Player/player.tscn
-Portal.tscn::PackedScene::4627272185298079095::1778160057::0::1::::<><><>0<>0<><>::uid://bgeio1odkhifl::::res://Assets/World/Old/Purple Portal Sprite Sheet.png
-rock1.tscn::PackedScene::4834425202827617935::1778160057::0::1::::<><><>0<>0<><>::uid://biundhblqws1m::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_01.png
-rock2.tscn::PackedScene::5041107965486492160::1778160057::0::1::::<><><>0<>0<><>::uid://074pibnsawrs::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_02.png
-rock3.tscn::PackedScene::7786513829500490065::1778160057::0::1::::<><><>0<>0<><>::uid://bvooumkw0h0cs::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_03.png
-rock4.tscn::PackedScene::8028311917185269977::1778160057::0::1::::<><><>0<>0<><>::uid://bo0drhibojc67::::res://Assets/World/Terrain/Decorations/Rocks in the Water/Water Rocks_04.png
-testmap.tscn::PackedScene::3491162145704474815::1778160057::0::1::::<><><>0<>0<><>::uid://ge2bglall2gj::::res://Assets/World/Old/darkdungeon_tileset_floor_and_stairs.png<>uid://cgsu5micklbmo::::res://Assets/World/Old/darkdungeon_tileset_walls.png<>uid://tah8o1bridjg::::res://Assets/World/Old/darkdungeon_tileset_decorations.png<>uid://bfp4yghbw5pxs::::res://Assets/World/Old/darkdungeon_tileset_water.png
-test_map.tscn::PackedScene::3989833658255508952::1778258426::0::1::::<><><>0<>0<><>::uid://cmhvxa0nsf46p::::res://Scenes/Player/player.tscn<>uid://l56xrwlcsdwb::::res://Assets/World/Floors_Tiles.png<>uid://geyg8p3mcuen::::res://Assets/World/Wall_Tiles.png<>uid://cuyfg5fwi5il8::::res://Scenes/Entities/Enemy/basic_enemy.tscn<>uid://du2h0podkeqk8::::res://Scenes/Entities/unit_spawner.tscn<>uid://cp5i15jweg7fc::::res://Scenes/Entities/Ally/basic_ally.tscn
-Tree2.tscn::PackedScene::8641041497771856862::1778160057::0::1::::<><><>0<>0<><>::uid://b7pt6sbmel5h7::::res://Assets/World/Terrain/Resources/Wood/Trees/Tree1.png
-tree3.tscn::PackedScene::3312701263193519661::1778160057::0::1::::<><><>0<>0<><>::uid://cvujmtcxxliov::::res://Assets/World/Terrain/Resources/Wood/Trees/Tree3.png
-tree4.tscn::PackedScene::3343905403207282552::1778160057::0::1::::<><><>0<>0<><>::uid://c5qgrnl66r22::::res://Assets/World/Terrain/Resources/Wood/Trees/Tree4.png
-::res://Scenes/World/Levels/::1778160106
-level_1.tscn::PackedScene::7107173797448852038::1778160057::0::1::::<><><>0<>0<><>::uid://ge2bglall2gj::::res://Assets/World/Old/darkdungeon_tileset_floor_and_stairs.png<>uid://cgsu5micklbmo::::res://Assets/World/Old/darkdungeon_tileset_walls.png<>uid://tah8o1bridjg::::res://Assets/World/Old/darkdungeon_tileset_decorations.png<>uid://bfp4yghbw5pxs::::res://Assets/World/Old/darkdungeon_tileset_water.png<>uid://c281lrgxiskjq::::res://Assets/World/Old/MainLev2.0.png<>uid://kdusg5swjfxl::::res://Assets/World/Old/TX Props.png<>uid://dmbh8qqx76e6y::::res://Assets/World/Old/Dimensional_Portal.png<>uid://b66qq5l00svt4::::res://Scenes/World/Portal.tscn
-::res://Scripts/::1778257996
-::res://Scripts/Entities/::1778257996
+::res://Scenes/::1778263931
+::res://Scenes/Entities/::1778263813
+unit_spawner.tscn::PackedScene::8619247596623912149::1778262138::0::1::::<><><>0<>0<><>::uid://b54o6j3l408pj::::res://Scripts/Entities/unit_spawner.gd
+::res://Scenes/Entities/Ally/::1778263819
+::res://Scenes/Entities/Enemy/::1778263812
+::res://Scenes/Player/::1778263839
+::res://Scenes/World/::1778263931
+::res://Scripts/::1778262144
+::res://Scripts/Entities/::1778262144
 projectile.gd::GDScript::4669538800332913517::1777729632::0::1::::<>Area2D<><>0<>0<><>::
-unit_spawner.gd::GDScript::4552858861715827971::1778257992::0::1::::<>Node2D<><>0<>0<><>::
+unit_spawner.gd::GDScript::4552858861715827971::1778262138::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scripts/Entities/Allies/::1778257874
 basic_ally.gd::GDScript::979699098783235230::1778257861::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Scripts/Entities/Enemies/::1778257885
