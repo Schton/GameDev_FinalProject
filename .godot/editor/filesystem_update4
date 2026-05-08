@@ -4,3 +4,4 @@ res://Scenes/Entities/Enemy/basic_enemy.tscn
 res://Scripts/Entities/Enemies/basic_enemy.gd
 res://Scenes/Entities/Ally/basic_ally.tscn
 res://Scenes/Entities/projectile.tscn
+res://Scenes/World/test_map.tscn
