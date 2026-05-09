@@ -1,27 +1,27 @@
 [gd_scene format=4 uid="uid://bpn0jvepfcvgg"]
 
-[ext_resource type="Texture2D" uid="uid://ff3b4j2ej35i" path="res://Assets/World/Terrain/Tileset/Tilemap_color3.png" id="1_cl1o4"]
-[ext_resource type="Texture2D" uid="uid://bsaqwx6o0daa5" path="res://Assets/World/Terrain/Tileset/Tilemap_color5.png" id="2_nidlx"]
-[ext_resource type="Texture2D" uid="uid://chei7qhbgjss4" path="res://Assets/World/Terrain/Tileset/Water Background color.png" id="3_nidlx"]
-[ext_resource type="Texture2D" uid="uid://djkc2fmrn2svv" path="res://Assets/Buildings/Blue Buildings/Archery.png" id="4_10l75"]
-[ext_resource type="Texture2D" uid="uid://b8fxhksujgu0t" path="res://Assets/Buildings/Blue Buildings/Barracks.png" id="5_kpsg6"]
-[ext_resource type="Texture2D" uid="uid://bgmt3sgjtcc5n" path="res://Assets/Buildings/Blue Buildings/Monastery.png" id="6_74oj6"]
-[ext_resource type="Texture2D" uid="uid://c6tg01po4hj0h" path="res://Assets/Buildings/Blue Buildings/Tower.png" id="6_ldqq3"]
-[ext_resource type="Texture2D" uid="uid://c0wg8u7pic35l" path="res://Assets/Buildings/Red Buildings/House1.png" id="7_nbhi4"]
-[ext_resource type="Texture2D" uid="uid://ditmqyjhnl1du" path="res://Assets/Buildings/Blue Buildings/Castle.png" id="7_tfq44"]
-[ext_resource type="Texture2D" uid="uid://g5c2vmjfnavc" path="res://Assets/Buildings/Red Buildings/House3.png" id="8_bexdr"]
-[ext_resource type="Texture2D" uid="uid://cy45bbxct4d4p" path="res://Assets/Buildings/Red Buildings/Archery.png" id="8_n0ysj"]
-[ext_resource type="Texture2D" uid="uid://50vwfyi2gu3x" path="res://Assets/Buildings/Red Buildings/Barracks.png" id="9_37fwt"]
-[ext_resource type="Texture2D" uid="uid://co325t0i38jxt" path="res://Assets/Buildings/Red Buildings/Monastery.png" id="9_s3oct"]
-[ext_resource type="Texture2D" uid="uid://jssmy27lb4ac" path="res://Assets/Buildings/Red Buildings/Tower.png" id="10_bx14y"]
-[ext_resource type="Texture2D" uid="uid://bg12ovyqdejbh" path="res://Assets/Buildings/Red Buildings/Castle.png" id="11_do24s"]
-[ext_resource type="Texture2D" uid="uid://dqe6rv8w6rkbo" path="res://Assets/Buildings/Blue Buildings/House1.png" id="16_fqvqv"]
-[ext_resource type="Texture2D" uid="uid://c0fhxtpbj72d0" path="res://Assets/Buildings/Blue Buildings/House3.png" id="17_hsvu8"]
-[ext_resource type="Texture2D" uid="uid://b7pt6sbmel5h7" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree1.png" id="18_0xhme"]
-[ext_resource type="Texture2D" uid="uid://cvujmtcxxliov" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree3.png" id="19_ooa6g"]
+[ext_resource type="Texture2D" uid="uid://chei7qhbgjss4" path="res://Assets/World/Terrain/Tileset/Water Background color.png" id="1_wobak"]
+[ext_resource type="Texture2D" uid="uid://ff3b4j2ej35i" path="res://Assets/World/Terrain/Tileset/Tilemap_color3.png" id="2_03j7h"]
+[ext_resource type="Texture2D" uid="uid://bsaqwx6o0daa5" path="res://Assets/World/Terrain/Tileset/Tilemap_color5.png" id="3_ilgh4"]
+[ext_resource type="Texture2D" uid="uid://djkc2fmrn2svv" path="res://Assets/Buildings/Blue Buildings/Archery.png" id="4_ee4cc"]
+[ext_resource type="Texture2D" uid="uid://b8fxhksujgu0t" path="res://Assets/Buildings/Blue Buildings/Barracks.png" id="5_kvofg"]
+[ext_resource type="Texture2D" uid="uid://bgmt3sgjtcc5n" path="res://Assets/Buildings/Blue Buildings/Monastery.png" id="6_dull0"]
+[ext_resource type="Texture2D" uid="uid://c0wg8u7pic35l" path="res://Assets/Buildings/Red Buildings/House1.png" id="7_6oc8g"]
+[ext_resource type="Texture2D" uid="uid://g5c2vmjfnavc" path="res://Assets/Buildings/Red Buildings/House3.png" id="8_187gq"]
+[ext_resource type="Texture2D" uid="uid://co325t0i38jxt" path="res://Assets/Buildings/Red Buildings/Monastery.png" id="9_5cnf8"]
+[ext_resource type="Texture2D" uid="uid://c6tg01po4hj0h" path="res://Assets/Buildings/Blue Buildings/Tower.png" id="10_krj07"]
+[ext_resource type="Texture2D" uid="uid://ditmqyjhnl1du" path="res://Assets/Buildings/Blue Buildings/Castle.png" id="11_wd34s"]
+[ext_resource type="Texture2D" uid="uid://cy45bbxct4d4p" path="res://Assets/Buildings/Red Buildings/Archery.png" id="12_hmkn1"]
+[ext_resource type="Texture2D" uid="uid://50vwfyi2gu3x" path="res://Assets/Buildings/Red Buildings/Barracks.png" id="13_xbqli"]
+[ext_resource type="Texture2D" uid="uid://jssmy27lb4ac" path="res://Assets/Buildings/Red Buildings/Tower.png" id="14_1f8bg"]
+[ext_resource type="Texture2D" uid="uid://bg12ovyqdejbh" path="res://Assets/Buildings/Red Buildings/Castle.png" id="15_vr1wk"]
+[ext_resource type="Texture2D" uid="uid://dqe6rv8w6rkbo" path="res://Assets/Buildings/Blue Buildings/House1.png" id="16_xiy4k"]
+[ext_resource type="Texture2D" uid="uid://c0fhxtpbj72d0" path="res://Assets/Buildings/Blue Buildings/House3.png" id="17_lserg"]
+[ext_resource type="Texture2D" uid="uid://b7pt6sbmel5h7" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree1.png" id="18_u512a"]
+[ext_resource type="Texture2D" uid="uid://cvujmtcxxliov" path="res://Assets/World/Terrain/Resources/Wood/Trees/Tree3.png" id="19_2b058"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eefbp"]
-texture = ExtResource("3_nidlx")
+texture = ExtResource("1_wobak")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -43,7 +43,7 @@ texture = ExtResource("3_nidlx")
 sources/2 = SubResource("TileSetAtlasSource_eefbp")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_74oj6"]
-texture = ExtResource("1_cl1o4")
+texture = ExtResource("2_03j7h")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -739,7 +739,7 @@ texture = ExtResource("1_cl1o4")
 35:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nbhi4"]
-texture = ExtResource("2_nidlx")
+texture = ExtResource("3_ilgh4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1439,7 +1439,7 @@ sources/0 = SubResource("TileSetAtlasSource_74oj6")
 sources/1 = SubResource("TileSetAtlasSource_nbhi4")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s3oct"]
-texture = ExtResource("1_cl1o4")
+texture = ExtResource("2_03j7h")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2135,7 +2135,7 @@ texture = ExtResource("1_cl1o4")
 35:23/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fqvqv"]
-texture = ExtResource("2_nidlx")
+texture = ExtResource("3_ilgh4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -2835,7 +2835,7 @@ sources/0 = SubResource("TileSetAtlasSource_s3oct")
 sources/1 = SubResource("TileSetAtlasSource_fqvqv")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0xhme"]
-texture = ExtResource("4_10l75")
+texture = ExtResource("4_ee4cc")
 8:3/0 = 0
 9:3/0 = 0
 1:4/0 = 0
@@ -2964,7 +2964,7 @@ texture = ExtResource("4_10l75")
 11:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ooa6g"]
-texture = ExtResource("5_kpsg6")
+texture = ExtResource("5_kvofg")
 1:3/0 = 0
 2:3/0 = 0
 3:3/0 = 0
@@ -3120,7 +3120,7 @@ texture = ExtResource("5_kpsg6")
 11:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uq1p6"]
-texture = ExtResource("6_74oj6")
+texture = ExtResource("6_dull0")
 5:2/0 = 0
 6:2/0 = 0
 5:3/0 = 0
@@ -3261,7 +3261,7 @@ texture = ExtResource("6_74oj6")
 9:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c44rx"]
-texture = ExtResource("7_nbhi4")
+texture = ExtResource("7_6oc8g")
 3:1/0 = 0
 4:1/0 = 0
 1:2/0 = 0
@@ -3334,7 +3334,7 @@ texture = ExtResource("7_nbhi4")
 7:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rmvsn"]
-texture = ExtResource("8_bexdr")
+texture = ExtResource("8_187gq")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
@@ -3409,7 +3409,7 @@ texture = ExtResource("8_bexdr")
 7:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4xptm"]
-texture = ExtResource("9_s3oct")
+texture = ExtResource("9_5cnf8")
 5:2/0 = 0
 6:2/0 = 0
 5:3/0 = 0
@@ -3550,7 +3550,7 @@ texture = ExtResource("9_s3oct")
 9:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dv7f7"]
-texture = ExtResource("6_ldqq3")
+texture = ExtResource("10_krj07")
 3:2/0 = 0
 4:2/0 = 0
 1:3/0 = 0
@@ -3639,7 +3639,7 @@ texture = ExtResource("6_ldqq3")
 5:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7a8e"]
-texture = ExtResource("7_tfq44")
+texture = ExtResource("11_wd34s")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -3879,7 +3879,7 @@ texture = ExtResource("7_tfq44")
 11:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gihgb"]
-texture = ExtResource("8_n0ysj")
+texture = ExtResource("12_hmkn1")
 8:3/0 = 0
 9:3/0 = 0
 1:4/0 = 0
@@ -4008,7 +4008,7 @@ texture = ExtResource("8_n0ysj")
 11:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquff"]
-texture = ExtResource("9_37fwt")
+texture = ExtResource("13_xbqli")
 1:3/0 = 0
 2:3/0 = 0
 3:3/0 = 0
@@ -4164,7 +4164,7 @@ texture = ExtResource("9_37fwt")
 11:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_osbjm"]
-texture = ExtResource("10_bx14y")
+texture = ExtResource("14_1f8bg")
 3:2/0 = 0
 4:2/0 = 0
 1:3/0 = 0
@@ -4253,7 +4253,7 @@ texture = ExtResource("10_bx14y")
 5:14/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vft20"]
-texture = ExtResource("11_do24s")
+texture = ExtResource("15_vr1wk")
 2:2/0 = 0
 3:2/0 = 0
 4:2/0 = 0
@@ -4493,7 +4493,7 @@ texture = ExtResource("11_do24s")
 11:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qmdyh"]
-texture = ExtResource("16_fqvqv")
+texture = ExtResource("16_xiy4k")
 3:1/0 = 0
 4:1/0 = 0
 1:2/0 = 0
@@ -4566,7 +4566,7 @@ texture = ExtResource("16_fqvqv")
 7:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q6mf2"]
-texture = ExtResource("17_hsvu8")
+texture = ExtResource("17_lserg")
 0:2/0 = 0
 1:2/0 = 0
 2:2/0 = 0
@@ -4657,7 +4657,7 @@ sources/12 = SubResource("TileSetAtlasSource_rmvsn")
 sources/13 = SubResource("TileSetAtlasSource_4xptm")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2etu0"]
-texture = ExtResource("18_0xhme")
+texture = ExtResource("18_u512a")
 5:3/0 = 0
 6:3/0 = 0
 17:3/0 = 0
@@ -5197,7 +5197,7 @@ texture = ExtResource("18_0xhme")
 90:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dpmcw"]
-texture = ExtResource("19_ooa6g")
+texture = ExtResource("19_2b058")
 4:1/0 = 0
 5:1/0 = 0
 6:1/0 = 0
@@ -5594,7 +5594,7 @@ texture = ExtResource("19_ooa6g")
 sources/0 = SubResource("TileSetAtlasSource_2etu0")
 sources/1 = SubResource("TileSetAtlasSource_dpmcw")
 
-[node name="Cedlvlv2" type="Node2D" unique_id=72971986]
+[node name="map_2" type="Node2D" unique_id=72971986]
 
 [node name="Water" type="TileMap" parent="." unique_id=1310963506]
 tile_set = SubResource("TileSet_eefbp")
